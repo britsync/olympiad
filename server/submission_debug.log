@@ -1,0 +1,26 @@
+2026-02-17T15:08:23.531Z - ERROR: pdf is not a function
+Stack: TypeError: pdf is not a function
+    at exports.submitProject (C:\Users\NC\Desktop\olympiad\server\controllers\submissionController.js:34:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-17T15:10:13.081Z - ERROR: pdf is not a function
+Stack: TypeError: pdf is not a function
+    at exports.submitProject (C:\Users\NC\Desktop\olympiad\server\controllers\submissionController.js:34:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-17T15:10:14.676Z - ERROR: pdf is not a function
+Stack: TypeError: pdf is not a function
+    at exports.submitProject (C:\Users\NC\Desktop\olympiad\server\controllers\submissionController.js:34:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-18T18:48:27.223Z - ERROR: Invalid PDF structure.
+Stack: InvalidPDFException: Invalid PDF structure.
+    at mr (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:458273)
+    at exports.PDFParse.load (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:472589)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.PDFParse.getText (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:472027)
+    at async exports.submitProject (C:\Users\NC\Desktop\olympiad\server\controllers\submissionController.js:51:25)
+2026-02-18T18:48:47.691Z - ERROR: Invalid PDF structure.
+Stack: InvalidPDFException: Invalid PDF structure.
+    at mr (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:458273)
+    at exports.PDFParse.load (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:472589)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.PDFParse.getText (C:\Users\NC\Desktop\olympiad\server\node_modules\pdf-parse\dist\pdf-parse\cjs\index.cjs:1:472027)
+    at async exports.submitProject (C:\Users\NC\Desktop\olympiad\server\controllers\submissionController.js:51:25)

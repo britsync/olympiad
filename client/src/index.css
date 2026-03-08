@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aether-bg: #020617;
+  --color-aether-soft: #0f172a;
+  --color-aether-gold: #c5a059;
+  --color-aether-gold-bright: #f6e05e;
+  --color-aether-accent: #c5a059;
+  --color-gold: #c5a059;
+  --color-gold-glow: rgba(197, 160, 89, 0.4);
+
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-float: float 10s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 6s ease-in-out infinite;
+  --animate-shine: shine 3s linear infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+    }
+
+    50% {
+      transform: translateY(-20px) scale(1.01);
+    }
+  }
+
+  @keyframes pulse-subtle {
+
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes shine {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes scan {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(100vh);
+    }
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 15px;
+  /* Reduced for more elegant feel */
+}
+
+/* Luxury Grain Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.02;
+  /* More subtle grain */
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #ffffff 20%, #c5a059 60%, #8a6d3b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.1));
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 10px 40px -10px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.02);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-gold {
+  background: rgba(197, 160, 89, 0.05);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  box-shadow: 0 10px 40px rgba(197, 160, 89, 0.05);
+}
+
+.gold-glow {
+  box-shadow: 0 0 60px -15px rgba(197, 160, 89, 0.3);
+}
+
+.btn-luxury {
+  @apply relative overflow-hidden transition-all duration-500;
+}
+
+.btn-luxury::after {
+  content: "";
+  @apply absolute inset-0 bg-white/10 -translate-x-full transition-transform duration-500 skew-x-12;
+}
+
+.btn-luxury:hover::after {
+  @apply translate-x-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.4);
+}
+
+.custom-scrollbar-cinematic::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scrollbar-cinematic::-webkit-scrollbar-track {
+  background: rgba(2, 5, 10, 0.5);
+}
+
+.custom-scrollbar-cinematic::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, transparent, rgba(197, 160, 89, 0.3), transparent);
+  border-radius: 10px;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+button,
+a,
+[role="button"] {
+  cursor: pointer;
+}

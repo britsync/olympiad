@@ -1,0 +1,18 @@
+{
+    "name": "olympiad-bots",
+    "version": "1.0.0",
+    "description": "Automation bots for Global AI Olympiad",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js",
+        "discord": "node discord.js",
+        "outreach": "node outreach.js",
+        "analytics": "node analyticsBridge.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.0",
+        "discord.js": "^14.14.1",
+        "dotenv": "^16.3.1",
+        "nodemailer": "^6.9.7"
+    }
+}

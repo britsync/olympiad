@@ -1,0 +1,45 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "axios": "^1.6.0",
+    "canvas-confetti": "^1.9.2",
+    "chart.js": "^4.4.1",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.368.0",
+    "react": "^19.0.0-rc",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^19.0.0-rc",
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "globals": "^15.0.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.2.0"
+  },
+  "overrides": {
+    "react": "^19.0.0-rc",
+    "react-dom": "^19.0.0-rc"
+  }
+}
